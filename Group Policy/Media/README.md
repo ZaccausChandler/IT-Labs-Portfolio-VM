@@ -8,19 +8,17 @@ The goal was to apply a stricter password policy for all domain users and verify
 
 
 
-&nbsp;Steps Taken
+Steps Taken
 
+1. Created a New Password Policy GPO
 
+- Opened \*\*Group Policy Management (GPMC)\*\*.
 
-1\. Created a New Password Policy GPO
+- Right-clicked the \*\*Domain\*\* and selected \*\*Create a GPO in this domain, and Link it here...\*\*
 
-\- Opened \*\*Group Policy Management (GPMC)\*\*.
+- Named the GPO: \*\*Password Policy\*\*.
 
-\- Right-clicked the \*\*Domain\*\* and selected \*\*Create a GPO in this domain, and Link it here...\*\*
-
-\- Named the GPO: \*\*Password Policy\*\*.
-
-\- Edited the GPO and navigated to: Computer Configuration
+- Edited the GPO and navigated to: Computer Configuration
 
 → Policies
 
@@ -36,25 +34,25 @@ The goal was to apply a stricter password policy for all domain users and verify
 
 Modified key settings such as:
 
-\- Minimum Password Length  
+- Minimum Password Length  
 
-\- Maximum Password Age  
+- Maximum Password Age  
 
-\- Password History  
+- Password History  
 
-\- Complexity Requirements
-
-
-
-2\. Linked and Applied the GPO
-
-\- Confirmed the GPO was linked at the domain level to ensure coverage for all users.
-
-\- Ensured the policy was properly linked and visible under the domain in GPMC.
+- Complexity Requirements
 
 
 
-3\. Forced Group Policy Update
+2. Linked and Applied the GPO
+
+- Confirmed the GPO was linked at the domain level to ensure coverage for all users.
+
+- Ensured the policy was properly linked and visible under the domain in GPMC.
+
+
+
+3. Forced Group Policy Update
 
 To apply the policy immediately, I ran the following command: "gpupdate /force"
 
@@ -68,13 +66,9 @@ Verification
 
 To confirm the policy was applied
 
-\- Checked \*\*Resultant Set of Policy (RSoP) or ran: "gpresult /r"
+- Checked Resultant Set of Policy (RSoP) or ran: "gpresult /r"
 
-
-
-
-
-\- Confirmed the new Password Policy settings appeared under Computer Settings → Security Settings.
+- Confirmed the new Password Policy settings appeared under Computer Settings → Security Settings.
 
 
 
@@ -82,13 +76,13 @@ Evidence
 
 Screenshots captured for:
 
-\- The Password Policy within the GPO Editor  
+- The Password Policy within the GPO Editor  
 
-\- The GPO linked under the domain in GPMC  
+- The GPO linked under the domain in GPMC  
 
-\- Command prompt showing `gpupdate /force`  
+- Command prompt showing `gpupdate /force`  
 
-\- gpresult output verifying policy application  
+- gpresult output verifying policy application  
 
 
 
@@ -96,11 +90,11 @@ Summary
 
 This lab demonstrates understanding of:
 
-\- Creating and editing Group Policy Objects  
+- Creating and editing Group Policy Objects  
 
-\- Enforcing domain-wide security settings  
+- Enforcing domain-wide security settings  
 
-\- Using command-line tools to apply and verify policies  
+- Using command-line tools to apply and verify policies  
 
 
 

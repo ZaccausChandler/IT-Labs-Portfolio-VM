@@ -1,4 +1,4 @@
-Networking \& Domain Configuration Lab
+Networking & Domain Configuration Lab
 
 
 
@@ -10,27 +10,27 @@ Environment Setup
 
 
 
-1\. Installed Server Manager Inside a Windows Server VM
+1. Installed Server Manager Inside a Windows Server VM
 
-\- Created a Windows Server virtual machine.
+- Created a Windows Server virtual machine.
 
-\- Installed Server Manager to manage roles and features.
+- Installed Server Manager to manage roles and features.
 
-\- Enabled the necessary components for domain services.
+- Enabled the necessary components for domain services.
 
 
 
-2\. Installed RSAT Tools
+2. Installed RSAT Tools
 
 Using Server Manager:
 
-\- Installed Remote Server Administration Tools (RSAT), including:
+- Installed Remote Server Administration Tools (RSAT), including:
 
-&nbsp; - Active Directory Domain Services tools  
+- Active Directory Domain Services tools  
 
-&nbsp; - DNS Management tools  
+- DNS Management tools  
 
-&nbsp; - Group Policy Management tools
+- Group Policy Management tools
 
 
 
@@ -38,13 +38,13 @@ These tools allowed me to administer the domain and DNS from the server VM.
 
 
 
-3\. Installed and Configured DNS
+3. Installed and Configured DNS
 
-\- Added the DNS Server role on the domain controller.
+- Added the DNS Server role on the domain controller.
 
-\- Verified the Forward Lookup Zone was created for the domain.
+- Verified the Forward Lookup Zone was created for the domain.
 
-\- Confirmed DNS service was running inside DNS Manager.
+- Confirmed DNS service was running inside DNS Manager.
 
 
 
@@ -52,17 +52,17 @@ Domain Integration
 
 
 
-4\. Joined Two Client VMs to the Domain
+4. Joined Two Client VMs to the Domain
 
-\- Created two separate Windows client VMs.
+- Created two separate Windows client VMs.
 
-\- Set each computer’s DNS server address to the "ZCCORP.LOCAL" IP.
+- Set each computer’s DNS server address to the "ZCCORP.LOCAL" IP.
 
-\- Joined both machines to the domain through system properties  
+- Joined both machines to the domain through system properties  
 
 
 
-\- Restarted each VM to complete the domain join.
+- Restarted each VM to complete the domain join.
 
 
 
@@ -70,27 +70,27 @@ Verification Steps
 
 
 
-5\. Verified Network Connectivity Using Ping
+5. Verified Network Connectivity Using Ping
 
 From each client VM: Ping ZCCORP.LOCAL or PING 10.1.10.2
 
 
 
-\- Confirmed both clients could resolve and communicate with the domain controller.
+- Confirmed both clients could resolve and communicate with the domain controller.
 
 
 
-6\. Confirmed Users With Command Prompt
+6. Confirmed Users With Command Prompt
 
 On each client VM: Net User
 
 
 
-\- Verified domain users appeared, confirming successful domain membership and replication.
+- Verified domain users appeared, confirming successful domain membership and replication.
 
 
 
-7\. Checked Network Adapter Settings Through CMD
+7. Checked Network Adapter Settings Through CMD
 
 Ran: IPCONFIG /ALL
 
@@ -98,11 +98,11 @@ Ran: IPCONFIG /ALL
 
 Confirmed:
 
-\- Correct IPv4 address  
+- Correct IPv4 address  
 
-\- DNS pointing to the domain controller  
+- DNS pointing to the domain controller  
 
-\- Network interface active and properly bound
+- Network interface active and properly bound
 
 
 
@@ -110,21 +110,17 @@ VirtualBox Network Configuration
 
 
 
-8\. Ensured Proper NIC Settings for Client VMs
+8. Ensured Proper NIC Settings for Client VMs
 
 Inside VirtualBox:
 
-\- Set network adapter for each client VM to:
-
-&nbsp; Host-Only Adapter
-
-&nbsp; 
+- Set network adapter for each client VM to: Host-Only Adapter
 
 This allowed the clients to communicate exclusively with the server VM for domain operations while maintaining a controlled virtual network environment.
 
 
 
-9\. DNS Forward Lookup Zone Verification
+9. DNS Forward Lookup Zone Verification
 
 After installing the DNS Server role, I verified the Forward Lookup Zone to ensure proper name resolution inside the domain.
 
@@ -132,21 +128,21 @@ After installing the DNS Server role, I verified the Forward Lookup Zone to ensu
 
 Steps performed:
 
-\- Opened DNS Manager using `dnsmgmt.msc`.
+- Opened DNS Manager using `dnsmgmt.msc`.
 
-\- Expanded Forward Lookup Zones.
+- Expanded Forward Lookup Zones.
 
-\- Confirmed the domain zone `zccorp.local` was created when the domain controller was promoted.
+- Confirmed the domain zone `zccorp.local` was created when the domain controller was promoted.
 
-\- Verified required DNS records:
+- Verified required DNS records:
 
-&nbsp; - SOA (Start of Authority)
+- SOA (Start of Authority)
 
-&nbsp; - NS (Name Server)
+- NS (Name Server)
 
-&nbsp; - A records for the domain controller and clients
+- A records for the domain controller and clients
 
-\- Ensured the DNS service was running and resolving hostnames correctly.
+- Ensured the DNS service was running and resolving hostnames correctly.
 
 
 
