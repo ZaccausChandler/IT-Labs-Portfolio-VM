@@ -43,7 +43,7 @@ Installed Windows Server, promoted it to a Domain Controller, configured DNS aut
 Key Tasks Performed:
 
 Installed Active Directory Domain Services
- ![Image Alt]((https://github.com/ZaccausChandler/IT-Labs-Portfolio-VM/blob/3b0fe4884ea3eb79e7e40a0ba7e25d2df3bafc0c/Active%20Directory/Media/ADUC.png))
+(https://github.com/ZaccausChandler/IT-Labs-Portfolio-VM/blob/3b0fe4884ea3eb79e7e40a0ba7e25d2df3bafc0c/Active%20Directory/Media/ADUC.png)
 Created domain: yourdomain.local
 
 Set up OUs for HR, IT, and Workstations
