@@ -46,7 +46,7 @@ Installed Active Directory Domain Services
 ![image alt](https://github.com/ZaccausChandler/IT-Labs-Portfolio-VM/blob/3b0fe4884ea3eb79e7e40a0ba7e25d2df3bafc0c/Active%20Directory/Media/ADUC.png)
 
 Created domain: zccorp.local
-![image alt](C:\Users\Zaccaus Chandler\OneDrive\Pictures\Screenshots\Screenshot 2025-12-08 224342.png)
+![image alt]()
 
 Set up OUs for HR, IT, and Workstations
 ![image alt]()
