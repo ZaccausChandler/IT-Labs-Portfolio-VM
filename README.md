@@ -124,7 +124,7 @@ Task Manager Disabled on Desktop02(Amanda)
 ## 4. RSAT Tools & Remote Administration
 
 Description:
-Used RSAT from a client PC to manage AD, GPO, Users, and Computers remotely — simulating a help desk technician managing domain resources.
+Used RSAT from DESKTOP01(Helpdesk user) to manage AD, GPO, Users, and Computers remotely — simulating a help desk technician managing domain resources.
 
 Key Tasks:
 
