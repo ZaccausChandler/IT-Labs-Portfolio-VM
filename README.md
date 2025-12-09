@@ -6,9 +6,9 @@ Hands-on system administration and help desk labs built to simulate a real-world
 
 Domain Controller: Windows Server (Active Directory, DNS, Server Manager)
 
-Client Workstations: Windows 10/11 (2 machines joined to the domain)
+Client Workstations: DESKTOP01 & DESKTOP02 (2 VM's joined to the domain)
 
-Virtualization Platform: (Hyper-V, VirtualBox, VMware – choose yours)
+Virtualization Platform: VirtualBox
 
 Tools Used: RSAT, Group Policy Management Console, PowerShell, CMD, Remote Desktop
 
