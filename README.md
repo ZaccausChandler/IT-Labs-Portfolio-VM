@@ -128,18 +128,22 @@ Used RSAT from DESKTOP01(Helpdesk user) to manage AD, GPO, Users, and Computers 
 
 Key Tasks:
 
-Installed RSAT on a Windows 10/11 client using server manager
+Installed RSAT on a Windows 10/11 client (DESKTOP01) using server manager
 
-![image alt]()
+![image alt](https://github.com/ZaccausChandler/Windows-System-Administration-Project/blob/5b8e70d37e2034a2c32f54fe03c08ae1ad4000a9/Networking/Media/RSAT%20TOOLS.png)
+
 
 Managed users and GPOs without logging into the server
 
+![image alt](https://github.com/ZaccausChandler/Windows-System-Administration-Project/blob/5b8e70d37e2034a2c32f54fe03c08ae1ad4000a9/Networking/Media/DESKTOP01%20AD.png)
+
 Performed remote desktop connections to the server
+
+![image alt]()
 
 Tested permissions and policy application from the client side
 
-Screenshots:
-(Insert RSAT tools shots)
+(See previous screenshot where DESKTOP02 could not access Task Manager)
 
 ### 5. Help Desk Troubleshooting Simulations
 
